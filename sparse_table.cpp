@@ -202,9 +202,9 @@ public:
                 st[j][i]=fun(st[j][i-1],st[j+(1ll<<(i-1))][i-1]);
             }
         }
-        for(ll i=0;(1ll<<i)<size;i++)
+        for(ll i=0;(1ll<<i)<=size;i++)
         {
-            for(ll j=(1<<i);j<size && j<(1<<(i+1)); j++)
+            for(ll j=(1<<i);j<=size && j<(1<<(i+1)); j++)
                 floorlog[j]=i;
         }
     }
